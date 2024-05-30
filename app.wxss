@@ -1,0 +1,192 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+.custom {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 44px;
+  z-index: 999;
+  background: #fff;
+  display: flex;
+  align-items: center;
+}
+.numberfont {
+  font-family: "arial";
+}
+
+/**app.wxss**/
+image {
+  display: block;
+}
+
+/* tabBar页面外框统一样式 */
+.container_box {
+  padding-bottom: 101rpx;
+}
+
+.container_box::after {
+  content: "";
+  display: block;
+  height: env(safe-area-inset-bottom);
+  width: 100%;
+}
+
+/* 底部悬浮按钮 (加在外框，内容再包一层)*/
+.btnfixed_box{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	z-index: 5;
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.05);
+  z-index: 9999;
+  background: #fff;
+}
+.btnfixed_box::after {
+  content: "";
+  display: block;
+  height: env(safe-area-inset-bottom);
+  width: 100%;
+}
+
+/* 没有tabBar外框统一样式 */
+.wrapper_box::after {
+  content: "";
+  display: block;
+  height: env(safe-area-inset-bottom);
+  width: 100%;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+  display: none;
+}
+/* 标题一行超出隐藏 */
+.text_hide {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+/* 标题两行超出隐藏 */
+.text_hide2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+/* 外发光 */
+.box_shadow {
+  box-shadow: 0 0 15rpx rgba(0, 0, 0, 0.06);
+}
+
+/*隐藏滚动条*/
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
+
+.option {
+  opacity: 0;
+}
+
+.ns {
+  /* padding-top: 44rpx; */
+  width: 100%;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  color: white;
+  font-weight: bold;
+  background:#913492;
+  position: fixed;
+  z-index: 2;
+}
+
+.ns_box {
+  /* padding-top: 44rpx; */
+  height: 44px;
+}
+
+.btnoff {
+  background: #999 !important;
+}
+
+.no_content{
+  color: #999 !important;
+  text-indent: 20rpx;
+  font-size: 30rpx !important;
+}
+/* 回到顶部 */
+.totop {
+  position: fixed;
+  right: 38rpx;
+  bottom: calc(env(safe-area-inset-bottom) + 108rpx);
+  width: 70rpx;
+  height: 70rpx;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+
+.totop image {
+  width: 100%;
+  height: 100%;
+}
+
+.share_fixed {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.share_fixed image {
+  width: 130rpx;
+}
+ 
+.fl {
+  display: flex;
+  align-items: center;
+}
+.fl_ju_sb{
+  display: flex;
+
+  justify-content: space-between;
+}
+.fl_ju_sb_al{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.no_list_icon{
+  width: 658rpx;
+  height: 547rpx;
+  margin: 35% auto  0;
+}

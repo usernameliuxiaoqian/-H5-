@@ -1,0 +1,31 @@
+<!--packageA/pages/selectCity/selectCity.wxml-->
+<view class="wrapper_box">
+    <view class="box_all">
+        <view class="fl_ju_sb_al">
+            <view class="fl">
+                <!-- <image src="/icon/index_address_icon.png" class="index_address_icon"></image> -->
+                <view class="current_city" data-state="now" bindtap="confirm">当前定位城市 {{city}}</view>
+            </view>
+            <view class="change_nationwide" data-state="nationwide" bindtap="confirm">切换全国</view>
+        </view>
+
+        <view class="fl_ju_sb_al" style="margin-top:30rpx">
+            <view class="city_details  text_hide" style="color: {{provinceName? '#1E1E1E':'#787878'}};" data-level="1" bind:tap="changeCity">{{provinceName ||'请选择省'}}</view>
+            <view class="city_details  text_hide" style="color: {{cityName? '#1E1E1E':'#787878'}};" data-level="2" bind:tap="changeCity">{{cityName || '请选择市'}}</view>
+            <view class="city_details  text_hide" style="color: {{regionName? '#1E1E1E':'#787878'}};" data-level="3" bind:tap="changeCity">{{regionName || '请选择区'}}</view>
+        </view>
+        <view class="select_title">选择省份/地区</view>
+        <!--索引列表-->
+        <scroll-view scroll-y="{{true}}" style="height: calc(100vh - 249px);">
+            <view class="fl_ju_sb_al" style="padding-top: 26rpx;padding-bottom: 26rpx;" wx:for="{{cityList}}" wx:key="this" data-item="{{item}}" bind:tap="citySelect">
+                <view class="city_name" style="color:{{item.name == regionName?'#E81507':'#1E1E1E'}}">{{item.name}}</view>
+                <image wx:if="{{item.name == regionName}}" src="/img/red_check_icon.png" class="red_check_icon"></image>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="btnfixed_box">
+        <view class="btn_boxs">
+            <view class="confirm" data-state="select" bindtap="confirm">确认</view>
+        </view>
+    </view>
+</view>
