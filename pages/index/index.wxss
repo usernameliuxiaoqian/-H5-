@@ -1,0 +1,95 @@
+/* packageA/pages/selectCity/selectCity.wxss */
+.box_all{
+  width: 700rpx;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 18rpx;
+}
+.change_nationwide{
+  width: 164rpx;
+  height: 52rpx;
+  border-radius: 29rpx 29rpx 29rpx 29rpx;
+  border: 2rpx solid #E81507;
+  font-family: "PingFang SC, PingFang SC";
+  font-weight: 400;
+  font-size: 28rpx;
+  color: #E81507;
+  line-height: 52rpx;
+  text-align: center;
+}
+.index_address_icon{
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 18rpx;
+}
+.current_city{
+  font-size: 30rpx;
+  font-family: "PingFang SC, PingFang SC";
+  font-weight: 600;
+  color: #1E1E1E;
+} 
+.city_details{
+  width: 224rpx;
+  height: 92rpx;
+  background: rgba(217, 217, 217, 0.1);
+  border-radius: 8rpx 8rpx 8rpx 8rpx;
+  text-align: center;
+  line-height: 92rpx;
+  font-size: 30rpx;
+  font-family: "PingFang SC, PingFang SC";
+  font-weight: 400;
+}
+.select_title{
+  font-size: 30rpx;
+  font-family: "PingFang SC, PingFang SC";
+  font-weight: 600;
+  color: #1E1E1E;
+  margin-top: 30rpx;
+  margin-bottom: 14rpx;
+}
+.t-indexes {
+  /* height: calc(100vh - 182px) !important; */
+  /* margin-top: 200rpx; */
+  position: absolute;
+  width: 100%;
+  top: 130px;
+}
+.city_select{
+  width: 100%;
+  padding: 14rpx 25rpx 0 25rpx;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 99;
+  background: #fff;
+}
+.red_check_icon{
+  width: 32rpx;
+  height: 32rpx;
+}
+.city_name{
+  font-size: 28rpx;
+  font-family: "PingFang SC, PingFang SC";
+  font-weight: 400;
+  color: #1E1E1E;
+  margin-left: 40rpx;
+}
+.btn_boxs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+  height: 150rpx;
+  box-sizing: border-box;
+}
+.confirm{
+  width: 698rpx;
+  height: 90rpx;
+  border-radius: 45rpx 45rpx 45rpx 45rpx;
+  font-size: 30rpx;
+  font-family: "PingFang SC, PingFang SC";
+  font-weight: 500;
+  color: #FFFFFF;
+  background: #E81507;
+  line-height: 90rpx;
+  text-align: center;
+}
